@@ -1,0 +1,216 @@
+@import "z.less";
+
+.reset-sina();
+
+//正式开始写样式
+//iframe{position:absolute;z-index: 999;}
+header{ 
+       color:#fff;  
+       background-color: #FA3432;
+      .pl(30);
+      .pr(30);
+      .h(94);
+      .fs(30);
+      .flex_b();   
+      h1{
+          .fs(30);
+          .lh(49);
+          a{
+              .w(208);
+              .h(49);             
+              .d-b();
+              .bg-m('../img/login_img.png',no-repeat,left,center);
+              .bs(47,49);
+              .pl(56);
+              color:#fff;
+          }
+      }  
+      div{
+          a{color:#fff;}
+      }
+}
+nav{
+    .h(86);
+    .fs(24);    
+    .flex_a();
+    background-color: #fff;
+    a{
+      .db();  
+    }   
+}
+.slider{
+        .swipe {
+          overflow: hidden;
+          visibility: hidden;
+          position: relative;
+        }
+        .swipe-wrap {
+          overflow: hidden;
+          position: relative;
+        }
+        .swipe-wrap > div {
+          float:left;
+          width:100%;
+          position: relative;
+        }
+        img{
+            width: 100%;
+            .h(360);
+        }       
+        .indirector{
+            position: absolute;
+            .b(17);
+            left:50%;
+            transform: translateX(-50%);
+        }
+        .indirector li{
+            float: left;
+            .w(20);
+            .h(20);
+            .br(10);
+            background-color: #ccc;
+            .m(10,10,10,10);
+            transition:transform .5s;
+        }
+        .indirector li.current{
+            background-color: skyblue;
+            transform: scale(1.1);
+        }
+}
+.nav{
+    .flex_a();
+    .h(200);
+    border-bottom:1px solid #ccc;
+    background-color: #fff;
+    i{.bc();
+        .d-b();.br(30);
+        .w(90);.h(90);.lh(90);
+        .fs(50);.mb(10);
+        text-align: center;
+        color: #fff;
+        background-color: blue;
+    }
+    a:nth-of-type(1) i{background-color:#4099e9;}
+    a:nth-of-type(2) i{background-color:#fb6361;}
+    a:nth-of-type(3) i{background-color:#40c8b0;.lh(95);}
+    a:nth-of-type(4) i{background-color:#ffae28;}
+    span{
+        .fs(24);
+    }
+}
+.hot-content{
+    .title{
+        .h(94);
+        .flex_b();
+        .pl(23);
+        .pr(23);
+        
+        h2{
+            .w(180);
+            .h(40);
+            .fs(30);
+            .flex_b();
+            i{.h(40);.w(40);background:url(../img/home_ico_09.png);.bs(40,40);}    
+        }      
+        a{
+           .d-b();
+           span{.fs(28);color:#9a9b9c;}
+        }
+    }
+    .list{
+        li{
+            box-sizing:border-box;
+            .p(23,23,23,23);
+            .h(255);
+            .ml(23);.mr(23);.mb(25);
+            border:1px solid #e5e5e4;
+            background-color: #fff;
+            div{
+                h3{.fs(28);}
+                .flex_b();
+                span{.w(85);.h(30);.lh(30);.fs(16);color:#fff;text-align:center;background-color: #FFAB37;.mr(5);}
+                em{.w(33);.h(30);.lh(30);.fs(16);color:#fff;text-align:center;background-color: #FF7404;font-style: italic;}
+            }
+            section{
+                .h(170);
+                .flex_a();
+                span:nth-of-type(1){
+                    .fs(24);
+                    color:#FF7900;
+                    i{.fs(38);color:#FB4034;}
+                }
+                span:nth-of-type(2){
+                     color:#9a9b9c;
+                    .fs(30);
+                    p{
+                        .mb(30);
+                        color:#3d3c3c;
+                        i{color:#9a9b9c;.ml(10);}
+                    }
+                }
+                div{
+                    .w(170);
+                    .h(170);
+                }
+            }
+        }
+        li:last-child{.mb(0);}
+    }
+}
+.news{ 
+    .title{
+        .h(94);
+        .flex_b();
+        .pl(23);
+        .pr(23);
+        h2{
+            .w(180);
+            .h(40);
+            .fs(30);
+            .flex_b();
+            i{.h(40);.w(40);background:url(../img/home_ico_10.png);
+                .bs(40,40);
+                }            
+        }      
+        a{
+           .d-b();
+           span{.fs(28);color:#9a9b9c;}
+        }
+    }
+    ul{
+        border-top:1px solid #e2e2e1;
+        border-bottom: 1px solid #e0e0df;
+        background-color: #fff;
+        .mb(23);
+        .p(35,23,0,23); 
+        .news-list{
+            .mb(35);
+            display: flex;
+            div:first-child{
+                flex:0 0 auto;
+                .mr(23);
+                img{.w(110);.h(110);.br(30);}
+            }
+            div:last-child{
+                flex:1 1 auto;
+                .fs(28);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-sizing: border-box;
+                .pb(10);
+                .pt(10);
+//              .p{.ellipsis-basic();}
+                p:first-child{color:#494848;.w(300);.ellipsis-basic();}
+                p:last-child{
+//                  .ellipsis-basic()
+                    .flex_b();
+                    color:#9a9b9c;
+                }
+            }
+//          li:last-child{.mb(0)}
+        }       
+    }
+}
+
+

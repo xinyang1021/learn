@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>App欢迎页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="js/zepto.fullpage-master/demo/css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="js/zepto.fullpage-master/src/zepto.fullpage.css"/>
+		<style>
+			html,body{height: 100%;}
+			body{margin:0;}
+			.wp{overflow: hidden;height:100%;}
+			.wp-inner{
+				/*height: 100%;*/
+			}
+			.page{
+			/*	height: 100%;*/
+			width: 100%;
+			font-size: 30px;
+			background-size:100% auto;
+			}
+			.page1{
+				/*font-size: 50px;*/
+				/*flex-direction:column;*/
+				
+				color:white;
+				background:url(images/WallpapersCraft/1.jpg) ;
+				background-size:100% auto;
+			}
+			.page2{
+				color:white;
+				background:url(images/WallpapersCraft/2.jpg) ;
+				background-size:100% auto;
+			}
+			.page3{
+				color:white;
+				background:url(images/WallpapersCraft/3.jpg) ;
+				background-size:100% auto;
+			}
+			.page4{
+				color:white;
+				background:url(images/WallpapersCraft/4.jpg) ;
+				background-size:100% auto;
+			}
+			.page5{
+				color:white;
+				position:relative;
+				/*background:url(images/WallpapersCraft/5.jpg) ;*/
+				background-size:100% auto;
+			}
+			.page6{
+				background-color:darkcyan;
+			}
+			.page7{
+				background-color:brown;
+			}
+			.point{
+				width:20px;
+				/*height:80px;*/
+				list-style: none;
+				position:fixed;
+				right:10px;
+				top:50%;
+				transform:translateY(-50%)
+			}
+			.point li{
+				width:20px;
+				height:20px;
+				border-radius: 10px;
+				background-color: #ccc;
+				opacity: .5;
+				margin-top: 10px;
+				transition:all .5s;
+			}
+			.point li.cur{
+				background-color: blue;
+				transform: scale(1.2);
+			}
+			span{
+				font-size:50px;
+			}
+			span.on{
+				font-size:50px;
+				position:relative;
+				left:-10px;
+			}
+			span.ni{
+				color:yellow;
+				text-shadow:0 0 20px red;
+			}
+			iframe{
+				position:absolute;
+				z-index: -1;
+				border: 0 none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wp">
+    		<div class="wp-inner">
+        		<div class="page page1">
+        			<h2>一个繁忙的世界</h2>
+        			<div style="animation-delay: 1s;display:inline-block;width:30px;float: left;margin-left: 50px;margin-top: -20px;" class="word animated" data-animate='bounceIn'><span class="on">你</span>是否憧憬一场美丽的邂逅？</div>
+        			<br />
+        			<div style="animation-delay: 3s;display:inline-block;width:30px;float: left;margin-left: 120px;color:yellow;margin-top: -20px;" class="word animated" data-animate='bounceInUp'><span class="on">或</span>者一场改变命运的造化？</div>
+        		</div>
+        		<div class="page page2">
+        			<h2 style="color:black">认真的告诉你：</h2>
+        			<div style="animation-delay: 1s;color:dodgerblue;" class="word animated" data-animate='lightSpeedIn'><span>别</span>做梦了</div>
+        			<br />
+        			<div style="animation-delay: 3s;text-align: right;color:blue;" class="word animated" data-animate='rotateIn'>现实是冷漠的</div>
+        			<br />
+        			<div style="animation-delay: 5s;color:dodgerblue;" class="word animated" data-animate='bounceInUp'>一切，需要你自己去改变！</div>
+        		
+        		</div>
+        		<div class="page page3">
+        			<h2>不得不面对：</h2>
+        			<div style="animation-delay: 1s;margin-top:100px;color:#fff;" class="word animated" data-animate='lightSpeedIn'><span>有</span>些人</div>
+        			<br />
+        			<div style="animation-delay: 3s;text-align: right;text-shadow:0 0 20px #0000FF;" class="word animated" data-animate='rotateIn'>天生各种光环加持！</div>
+        			<br />
+        			<div style="animation-delay: 5s;" class="word animated" data-animate='bounceInUp'>有些人</div>
+        			<br />
+        			<div style="animation-delay: 7s;text-align: right;" class="word animated" data-animate='rotateIn'>智商爆表，打怪升级畅通无阻</div>
+        		</div>
+        		<div class="page page4">
+        			<h2>静下来想一想：</h2>
+        			<div style="animation-delay: 1s;text-align: center;" class="word animated" data-animate='rotateIn'><span>作</span>为一个普通人，该怎么办？</div>
+        			<div style="animation-delay: 3s;text-align: center;color:red;margin-top:50px;font-weight: bold;" class="word animated" data-animate='rotateIn'><span>不</span>要着急，还有救！</div>
+        		</div>
+        		<div class="page page5">
+        			<iframe src="hack-world.html" width="100%" height="100%"></iframe>
+        			<h2 style="text-align: center;position:absolute;left:20px;top:20px;z-index: 1;" class="word animated" data-animate='bounceDown'>Duang！！！！</h2>
+        			<div style="animation-delay: 2s;text-align: center;position:absolute;left:50px;top:180px;" class="word animated" data-animate='rotateIn'><span class="ni">逆</span>袭！App!</div>
+        			<div style="animation-delay: 4s;text-align: center;position:absolute;left:100px;top:280px;" class="word animated" data-animate='bounceInUp'>为你量身打造！</div>
+        		</div>
+    		</div>
+    		<ul class="point">
+    			<li class="cur"></li>
+    			<li></li>
+    			<li></li>
+    			<li></li>
+    			<li></li>
+    		</ul>
+		</div>
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.fullpage-master/src/zepto.fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.wp-inner').fullpage({
+//  			page: '.page',
+//  			start: 0,
+//  			duration: 500,
+//  			drag: false,
+//  			loop: false,
+//  			dir: 'v',
+    			change: function (e) {
+    				$('.page').eq(e.cur).find('.word').each(function(){
+    					$(this).removeClass($(this).data('animate')).hide();
+    				});
+    			},
+//  			beforeChange: function (e) {},
+				afterChange: function (e) {
+					$('.page').eq(e.cur).find('.word').each(function(){
+						$(this).addClass($(this).data('animate')).show();
+					});
+					$('.point li').removeClass('cur').eq(e.cur).addClass("cur")
+				}
+//  			orientationchange: function () {}
+    			
+			});
+			
+//			setTimeout(function(){
+//				$('.page1>.word').addClass('animated bounceInDown')
+//			},1000)
+//			
+//			$('.page2>.word').addClass('animated bounceInUp')
+		</script>
+	</body>
+</html>

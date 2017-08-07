@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>财神猫</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font/iconfont.css" />
+</head>
+<body>
+	<header>
+		<h1><a href="">财神猫</a></h1>
+		<div>
+			<a href="login.html">注册</a> |
+			<a href="">登录</a>
+		</div>
+	</header>
+	<nav>
+		<a href="" class="cur">首页</a>
+		<a href="">我要投资</a>
+		<a href="">账户中心</a>
+	</nav>
+	<section class="slider">
+		<div id='slider' class='swipe'>
+		  <div class='swipe-wrap'>
+		    <div><img src="img/slider1.jpg"/></div>
+		    <div><img src="img/slider2.jpg"/></div>
+		  </div>	  
+		  <ul class="indirector">
+		  	<li class="current"></li>
+		  	<li></li>
+		  </ul>
+	</div>
+	</section>
+	<section class="nav">
+		<a href=""><i class="icon">&#xe681;</i><span>安全保障</span></a>
+		<a href=""><i class="icon">&#xe606;</i><span>关于我们</span></a>
+		<a href=""><i class="icon">&#xe648;</i><span>新手指引</span></a>
+		<a href="help.html"><i class="icon">&#xf00bd;</i><span>帮助中心</span></a>
+	</section>
+	<section class="hot-content">
+		<div class="title">
+			<!--<h2><i class="icon">&#xe803;</i>热门产品</h2><a href=""><span>更多</span></a>-->
+			<h2><i></i><em>热门产品</em></h2><a href=""><span>更多</span></a>
+		</div>
+		<ul class="list">
+			<li>
+				<div>
+					<h3><a href="play1.html">盈信计划2467号1期</a></h3>
+					<div><span>返现金</span><em class="icon">&#x3434;</em></div>
+				</div>
+				<section>
+					<span><i>9.2%</i>+0.5%</span>
+					<span><p>180<i>天</i></p>投资期限</span>
+					<div class="data3" data-number="60">
+						<canvas></canvas>
+					</div>
+				</section>
+			</li>
+			<li>
+				<div>
+					<h3><a href="play1.html">盈信计划2467号1期</a></h3><div><span>返现金</span><em class="icon">&#x3434;</em></div>
+				</div>
+				<section>
+					<span><i>9.2%</i>+0.5%</span>
+					<span><p>180<i>天</i></p>投资期限</span>
+					<div class="data3" data-number="36">
+						<canvas></canvas>
+					</div>
+				</section>
+			</li>
+			<li>
+				<div>
+					<h3><a href="play1.html">盈信计划2467号1期</a></h3><div><span>返现金</span><em class="icon">&#x3434;</em></div>
+				</div>
+				<section>
+					<span><i>9.2%</i>+0.5%</span>
+					<span><p>180<i>天</i></p>投资期限</span>
+					<div class="data3" data-number="89">
+						<canvas></canvas>
+					</div>
+				</section>
+			</li>
+		</ul>
+	</section>
+	<section class="news">
+		<div class="title">
+			<h2><i></i><em>企业动态</em></h2>
+		</div>
+		<ul>
+			<li class="news-list">
+				<div>
+					<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+				</div>
+				<div>
+					<p><a href="">春日梦想 植树专享春日梦想 植树专享春日梦想 植树专享春日梦想 植树专享春日梦想 植树专享</a></p>
+					<p><em>来源：招财猫理财</em><i>2017-6-14</i></p>
+				</div>
+			</li>
+						<li class="news-list">
+				<div>
+					<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+				</div>
+				<div>
+					<p><a href="">全民植树 热爱森活全民植树 热爱森活全民植树 热爱森活全民植树 热爱森活</a></p>
+					<p><em>来源：招财猫理财</em><i>2017-6-14</i></p>
+				</div>
+			</li>
+						<li class="news-list">
+				<div>
+					<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+				</div>
+				<div>
+					<p><a href="">每月工资日 理财自加薪每月工资日 理财自加薪每月工资日 理财自加薪每月工资日 理财自加薪</a></p>
+					<p><em>来源：招财猫理财</em><i>2017-6-14</i></p>
+				</div>
+			</li>
+		</ul>		
+	</section>
+	<section class="footer">
+		<div>
+			<p>
+				<a href="">触屏版</a> | 
+				<a href="">电脑版</a> |
+				<a href="">APP下载</a>
+			</p>
+			<p>&copy;2017招财猫理财 浙ICP备14041616号</p>
+		</div>
+	</section>
+	
+	<script src="js/swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/App.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Circle.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){	
+			$(".data3").forEach(function(item){
+				console.info($('.data3'));
+				console.info(item);
+				console.info( $(item).find("canvas").attr({width:item.offsetWidth,height:item.offsetHeight}) );
+				new Circle(item,{frontColor:"#f40",lineWidth:3});
+			})
+		})
+
+		window.mySwipe = Swipe(document.getElementById('slider'),{
+//			auto:2000,
+			continuous :true,
+			callback:function(index,ele){
+				console.info(index,ele);				
+				$(".indirector li").removeClass("current").eq(index%2).addClass("current");
+			}
+		});
+	</script>
+</body>
+</html>

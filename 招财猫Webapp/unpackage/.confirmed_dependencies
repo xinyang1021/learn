@@ -1,0 +1,53 @@
+{
+	"index.html": {
+		"resources": [
+			"css/font/iconfont.woff",
+			"img/news20170310144045_植树节专享标题.jpg",
+			"css/index.css",
+			"img/login_img.png",
+			"js/zepto/zepto.js",
+			"img/home_ico_09.png",
+			"help.html",
+			"img/slider1.jpg",
+			"img/home_ico_10.png",
+			"js/swipe.js",
+			"css/font/iconfont.css",
+			"img/slider2.jpg",
+			"login.html",
+			"play1.html"
+		],
+		"refer": [
+			"help.html",
+			"login.html",
+			"play1.html"
+		]
+	},
+	"help.html": {
+		"resources": [
+			"css/font/iconfont.woff",
+			"css/help.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"index.html",
+			"css/login.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"play1.html": {
+		"resources": [
+			"css/play1.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	}
+}

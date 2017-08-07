@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/play1.css"/>
+		<title>play1</title>
+		<script src="js/App.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="icon">&#xf000c;</a>
+			<a href="">盈信计划2561号1期</a>
+			<a href="" class="icon">&#xe6dc;</a>
+		</header>
+		<section class="earnings">
+			<div>
+				<h2>9.2%+0.5%</h2>
+				<p>9.7%　(9.2%+活动加息0.5%)</p>
+			</div>
+		</section>
+		<section class="date">
+			<div>
+				<span>1000元起投</span><i>|</i><span>期限180天</span>
+			</div>
+		</section>
+		<section class="content">
+			<ul>
+				<li>
+					<span>
+						<i class="icon">&#xf029c;</i>
+						<em>省级律所法律支持</em>
+					</span>
+					<div></div>
+					<span>
+						<i class="icon">&#xe608;</i>
+						<em>省级律所法律支持</em>
+					</span>	
+				</li>
+				<li>
+					<div></div><i></i><span></span>
+				</li>
+				<li>
+					<span>
+						<i class="icon">&#xf029c;</i>
+						<em>省级律所法律支持</em>
+					</span>
+					<div></div>
+					<span>
+						<i class="icon">&#xe608;</i>
+						<em>省级律所法律支持</em>
+					</span>	
+				</li>
+				
+			</ul>
+		</section>
+		<section class="progress">
+			<span class="span">
+				<i class="i"></i>
+				<em></em>
+			</span>
+			<div>
+				<i class="red"></i>
+			</div>
+			<p><span>已投资<i>37</i>人</span><span>剩余可投<i>632000</i></span></p>
+		</section>
+		<section class="footers">		
+			<a href="">收益计算</a>
+			<a href="">立即投资</a>
+		</section>
+		<script type="text/javascript">
+			var progress = document.getElementsByClassName('progress')[0];
+			var red = progress.getElementsByClassName('red')[0];
+			var spans = progress.getElementsByClassName('span')[0];
+			var is=progress.getElementsByClassName('i')[0];
+			var red = progress.getElementsByClassName('red')[0];
+			var num = 0;
+			var timer;
+			var value = 37;
+			window.onload = function(){
+				red.classList.add('on');
+				spans.classList.add('on');
+				timer = setInterval(function(){
+					num++;
+					if(num<=value){
+						is.innerHTML = num + '%'
+					}else if(num>value){
+						clearInterval(timer);
+					}
+				},50);				
+			};
+		</script>
+	</body>
+</html>

@@ -1,0 +1,248 @@
+html {
+  font-size: 100px;
+}
+.flex_b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cur {
+  color: red;
+}
+@font-face {
+  font-family: "iconfont";
+  src: url('font/iconfont.eot');
+  src: url('font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('font/iconfont.woff') format('woff'), /* chrome, firefox */ url('font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('font/iconfont.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.icon {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+  background-color: #f9f9f9;
+}
+.footer {
+  display: flex;
+  border-top: 1px solid #ededec;
+  background-color: #fff;
+  margin-top: 0.23rem;
+}
+.footer div {
+  margin: auto;
+  box-sizing: border-box;
+  height: 1.65rem;
+  line-height: 0.56rem;
+  padding-top: 0.23rem;
+}
+.footer div p:first-child {
+  color: #494848;
+  font-size: 0.28rem;
+  text-align: center;
+}
+.footer div p:last-child {
+  color: #9a9b9c;
+  font-size: 0.26rem;
+  text-align: center;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img {
+  border: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+img {
+  display: block;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font-size: 12px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+i,
+em {
+  font-style: normal;
+}
+header {
+  color: #fff;
+  background-color: #FA3432;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  height: 0.94rem;
+  font-size: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  font-size: 0.3rem;
+  display: block;
+  color: #fff;
+}
+.title {
+  height: 0.94rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+.title h2 a i {
+  display: inline-block;
+  height: 0.58rem;
+  line-height: 0.65rem;
+  width: 0.58rem;
+  border-radius: 0.15rem;
+  text-align: center;
+  margin-right: 0.21rem;
+  color: #fff;
+  font-size: 0.4rem;
+  background-color: #faa242;
+}
+.title h2 span {
+  color: #4c4b4b;
+  font-size: 0.25rem;
+}
+.title div a {
+  display: block;
+  font-size: 0.28rem;
+  color: #faa242;
+}
+.tel {
+  margin-top: 0.48rem;
+  margin-bottom: 1rem;
+}
+.tel ul {
+  border-bottom: 1px solid transparent;
+  background-color: #fff;
+  margin-bottom: 0.23rem;
+  padding: 0.21rem 0.23rem 0rem 0.28rem;
+}
+.tel ul .news-list {
+  margin-bottom: 0.2rem;
+  display: flex;
+}
+.tel ul .news-list div:first-child {
+  flex: 0 0 auto;
+  margin-right: 0.28rem;
+}
+.tel ul .news-list div:first-child span {
+  display: block;
+  width: 0.78rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-radius: 0.3rem;
+  font-size: 0.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #22cfd8;
+}
+.tel ul .news-list div:last-child {
+  flex: 1 1 auto;
+  font-size: 0.28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-bottom: 0.1rem;
+}
+.tel ul .news-list div:last-child p:first-child span {
+  color: #1fabd3;
+}
+.tel ul .news-list div:last-child p:last-child {
+  font-size: 0.2rem;
+  color: #9a9b9c;
+}
